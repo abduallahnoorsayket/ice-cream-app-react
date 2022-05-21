@@ -1,18 +1,14 @@
 import React from "react";
 import classes from "./IceCream.module.css";
+import { Scoop } from "./Scoop/Scoop";
 export const IceCream = () => {
   return (
     <div>
       <div className={classes.icecream}>
-        <p className="cone"></p>
-        <div className="scoop chocolate"></div>
-        <div className="scoop vanilla"></div>
-        <div className="scoop orange"></div>
-        <div className="scoop strawberry"></div>
-        <div className="scoop chocolate"></div>
-        <div className="scoop vanilla react" id="scoop"></div>
-        <div className="scoop lemon"></div>
-        <div className="cherry"></div>
+        <p className={classes.cone}></p>
+        {/* scoop comp */}
+        <Scoop />
+        <div className={classes.cherry}></div>
       </div>
     </div>
   );
