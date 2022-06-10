@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./IceCream.module.css";
+import classes from "./Builder.module.css";
 import Items from "./Items/Items";
 import { TotalPrice } from "./TotalPrice/TotalPrice";
 import { Modal } from "./Modal/Modal";
