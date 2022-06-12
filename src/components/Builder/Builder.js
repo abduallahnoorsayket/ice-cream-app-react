@@ -11,11 +11,8 @@ export const Builder = () => {
         <h3>Build your own Ice Cream Sundae</h3>
         <Items />
         <TotalPrice />
-        <button
-          type="button"
-          onclick="next()"
-          className={[classes.order, "rounded"].join("")}
-        >
+        {/* onclick="next()" */}
+        <button type="button" className={[classes.order, "rounded"].join(" ")}>
           Add to Cart
         </button>
       </div>

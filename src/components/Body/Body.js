@@ -4,7 +4,7 @@ import IceCreamBuilder from "../../containers/IceCreamBuilder/IceCreamBuilder";
 
 export const Body = () => {
   return (
-    <div class={classes.mainBody}>
+    <div className={classes.mainBody}>
       <IceCreamBuilder />
     </div>
   );
