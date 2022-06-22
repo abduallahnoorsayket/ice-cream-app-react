@@ -1,11 +1,14 @@
 import React from "react";
 import { Item } from "./Item/Item";
 
-export const Items = () => {
+export const Items = ({ items }) => {
+  const flavours = Object.keys(items);
   return (
     <div>
       <ul>
-        <Item />
+        {flavours.map((flavour) => (
+          <Item key={flavour} name={flavour} />
+        ))}
       </ul>
     </div>
   );
