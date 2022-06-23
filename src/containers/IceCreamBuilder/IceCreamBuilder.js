@@ -6,8 +6,8 @@ import { IceCream } from "../../components/IceCream/IceCream";
 export default class IceCreamBuilder extends Component {
   state = {
     items: {
-      vanila: 45,
-      cholcolate: 30,
+      vanilla: 45,
+      chocolate: 30,
       lemon: 20,
       orange: 15,
     },
@@ -40,11 +40,16 @@ export default class IceCreamBuilder extends Component {
   };
 
   render() {
-    const { items, totalPrice } = this.state;
+    const { items, totalPrice, scoops } = this.state;
     return (
       <div className={["container", classes.container].join(" ")}>
-        <IceCream />
-        <Builder items={items} price={totalPrice} />
+        <IceCream scoops={scoops} />
+        <Builder
+          items={items}
+          price={totalPrice}
+          add={this.addScoop}
+          remove={this.removeScoop}
+        />
       </div>
     );
   }
